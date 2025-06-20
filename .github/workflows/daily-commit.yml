@@ -3,7 +3,7 @@ name: Daily Commit
 on:
   schedule:
     - cron: '15 4 * * *'  # Runs at 04:15 UTC every day
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
